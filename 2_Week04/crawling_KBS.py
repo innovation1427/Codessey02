@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-crawling_KBS.py
-- 학습용: Selenium으로 네이버 로그인 전/후 콘텐츠 비교 + 로그인 후 특정 콘텐츠 크롤링 + 네이버 메일 제목 수집
-- 설치: pip install -U selenium webdriver-manager
-- 주의: 네이버 보안(캡차/2FA) 시 브라우저에서 통과 후 콘솔에 Enter
-"""
-
 import os
 import sys
 import time
@@ -213,12 +204,12 @@ def get_mail_subjects(driver: webdriver.Chrome, limit: int = 20) -> List[str]:
                 js = """
                     const out = [];
                     const pick = (el) => {
-                      const t = (el.getAttribute('title') || el.innerText || '').trim();
-                      if (t && t.length >= 2) out.push(t);
+                    const t = (el.getAttribute('title') || el.innerText || '').trim();
+                    if (t && t.length >= 2) out.push(t);
                     };
                     document.querySelectorAll('a, strong, span').forEach(el => {
-                      const txt = (el.getAttribute('aria-label') || el.innerText || '').toLowerCase();
-                      if (txt.includes('제목') || txt.includes('mail') || txt.length >= 10) pick(el);
+                    const txt = (el.getAttribute('aria-label') || el.innerText || '').toLowerCase();
+                    if (txt.includes('제목') || txt.includes('mail') || txt.length >= 10) pick(el);
                     });
                     return out.slice(0, 200);
                 """
