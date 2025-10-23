@@ -7,7 +7,7 @@ import os
 
 # --- 1. 발송자 정보 설정 ---
 sender_email = "innovation1426@gmail.com"
-password = "fdfhpgprrufiwtpy"
+password = ""
 
 # --- 2. CSV에서 전체 수신자 목록 가져오기 ---
 receiver_list = []
