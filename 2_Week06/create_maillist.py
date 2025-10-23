@@ -16,7 +16,9 @@ data = [
     ["이름", "이메일"],
     ["NASA 구조 총괄", "nasa_rescue_lead@example.com"],
     ["KARI 화성탐사팀", "kari_mars_team@example.com"],
-    ["UN 우주사무국", "unoosa_urgent@example.com"]
+    ["UN 우주사무국", "unoosa_urgent@example.com"],
+    ["혁신", "alsgur1426@naver.com"],
+    ["정석용", "syjung@dongyang.ac.kr"]
 ]
 
 try:
