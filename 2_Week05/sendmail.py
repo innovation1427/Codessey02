@@ -9,7 +9,7 @@ import os # 파일 경로를 다루기 위해 os 모듈 추가
 # 1. 보내는 사람, 받는 사람, 앱 비밀번호 설정
 sender_email = "innovation1426@gmail.com"
 receiver_email = "alsgur1426@naver.com"
-password = "fdfhpgprrufiwtpy"
+password = ""
 
 # 2. 이메일 메시지 설정 (MIMEMultipart)
 # MIMEMultipart는 여러 부분(본문, 첨부파일 등)을 담을 수 있는 컨테이너 역할
